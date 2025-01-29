@@ -1,26 +1,19 @@
 import java.util.Scanner;
-//블로그 베껴온건데 안되기만해/?
+
 public class Main {
-	public static void main(String[] args) {
-		Scanner sc = new Scanner(System.in);
-		int i;
-		int n = sc.nextInt();
-		int a = 0;
-		int b = 0;
-		int array[] = new int[n];
-		
-		for(i = 0;i < n;i++) 
-		{
-			a = sc.nextInt();
-			b =sc.nextInt();
-			array[i] = a+b;
-		}
-		
-		for(i = 0;i < n;i++) 
-		{
-			System.out.print("Case #");
-			System.out.println((i+1)+": "+array[i]);
-		}
-		
-	}
+
+   public static void main(String[] args) {
+      Scanner sc = new Scanner(System.in);
+      int T = sc.nextInt();
+      int value[] = new int[T];
+
+      for (int i = 0; i < T; i++) {
+         int a = sc.nextInt();
+         int b = sc.nextInt();
+         value[i] = a + b;
+      }
+      for (int i = 0; i < T; i++) {
+         System.out.println("Case #" + (i + 1) + ": " + value[i]);
+      }
+   }
 }
