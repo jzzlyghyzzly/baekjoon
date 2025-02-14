@@ -1,14 +1,11 @@
-import java.util.Scanner;
-
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
 public class Main {
-
-	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-		Scanner sc = new Scanner(System.in);
-		String N = sc.next();
-		int B = sc.nextInt();
-		sc.close();
-		System.out.println(Integer.parseInt(N, B));
+	public static void main(String[] args) throws IOException {
+		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+		String[] input = br.readLine().split(" ");
+		int B = Integer.parseInt(input[1]);
+		System.out.println(Integer.parseInt(input[0], B));
 	}
-
 }
